@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="rss" transform="translate(-1 -1)">
+    <path id="Path_6767" data-name="Path 6767" d="M3.286,1H1V3.286H3.286A11.429,11.429,0,0,1,14.714,14.714V17H17V14.714A13.714,13.714,0,0,0,3.286,1Z"/>
+    <path id="Path_6768" data-name="Path 6768" d="M3.286,6H1V8.286H3.286A5.714,5.714,0,0,1,9,14v2.286h2.286V14A8,8,0,0,0,3.286,6Z" transform="translate(0 0.714)"/>
+    <path id="Path_6769" data-name="Path 6769" d="M3.286,15.571A2.286,2.286,0,1,0,1,13.286,2.286,2.286,0,0,0,3.286,15.571Z" transform="translate(0 1.429)"/>
+  </g>
+</svg>

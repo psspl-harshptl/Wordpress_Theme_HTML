@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68.25" height="60" viewBox="0 0 68.25 60">
+  <g id="Group_3101" data-name="Group 3101" transform="translate(-254.334 -2426)">
+    <g id="ms-sharepoint-svgrepo-com" transform="translate(254.334 2426)">
+      <ellipse id="Ellipse_350" data-name="Ellipse 350" cx="20.591" cy="20.216" rx="20.591" ry="20.216" transform="translate(12.782)" fill="#125456"/>
+      <circle id="Ellipse_351" data-name="Ellipse 351" cx="17.221" cy="17.221" r="17.221" transform="translate(33.807 14.282)" fill="#25adb4"/>
+      <g id="Group_3092" data-name="Group 3092" transform="translate(14.933 14.984)">
+        <ellipse id="Ellipse_352" data-name="Ellipse 352" cx="13.478" cy="13.852" rx="13.478" ry="13.852" transform="translate(6.829 17.312)" fill="#2fc7db"/>
+        <path id="Path_7996" data-name="Path 7996" d="M7,15.379A6.379,6.379,0,0,1,13.379,9H28.263a6.379,6.379,0,0,1,6.379,6.379V40.894a6.379,6.379,0,0,1-6.379,6.379H7Z" transform="translate(-7 -9)" fill="rgba(0,0,0,0.3)"/>
+      </g>
+      <rect id="Rectangle_2242" data-name="Rectangle 2242" width="38.187" height="38.286" rx="2" transform="translate(0 10.483)" fill="#126568"/>
+      <path id="Path_7997" data-name="Path 7997" d="M22.01,26.145c0-3.3-2.211-4.751-6.811-6.444-3.6-1.336-4.458-1.723-4.458-3,0-1.1,1.07-1.841,2.889-1.841a11.522,11.522,0,0,1,5.563,1.693l2-3.534A14.09,14.09,0,0,0,13.559,11c-4.636,0-7.952,2.376-7.952,6,0,3.712,2.639,4.9,7.061,6.474,3.53,1.247,4.208,1.871,4.208,2.97,0,1.307-1.248,1.96-3.209,1.96a11.57,11.57,0,0,1-6.383-2.109L5,29.679a15.463,15.463,0,0,0,8.773,2.584C18.551,32.263,22.01,30.006,22.01,26.145Z" transform="translate(5.655 8.186)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
