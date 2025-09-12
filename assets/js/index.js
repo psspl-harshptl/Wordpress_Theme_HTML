@@ -200,6 +200,7 @@ var swiper = new Swiper(".service-page-slider", {
     function initMatchHeights() {
         matchCardHeights(".our-service-card p");
         matchCardHeights(".testimonial-card p");
+        matchCardHeights(".blog-wrap h3, .blog-wrap .h3");
     }
     let resizeTimer;
     window.addEventListener("load", initMatchHeights);

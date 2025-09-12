@@ -139,7 +139,7 @@ body {
 
     h2 {
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: var(--rfs-48);
         color: var(--text-dark);
         font-weight: 800;
@@ -166,7 +166,7 @@ body {
 }
 
 .swiper {
-    padding-bottom: 75px;
+    padding-bottom: 45px;
 
     .swiper-slide {
         .card {
@@ -236,7 +236,7 @@ body {
 
 .img-pattern {
     border-radius: 20px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--light-border);
     overflow: hidden;
     padding-top: 30px;
     padding-right: 30px;
@@ -246,6 +246,7 @@ body {
         border-radius: 20px;
         height: 500px;
         object-fit: cover;
+        box-shadow: 5px -5px 20px rgba(0,0,0,0.1);
     }
 
     &.small_img {
@@ -338,7 +339,7 @@ body {
 .main-circle-wrapper {
     width: 210px;
     height: 210px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--light-border);
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -505,8 +506,8 @@ body {
 
 .section-wrap-light {
     background-color: var(--bg-light);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--light-border);
+    border-bottom: 1px solid var(--light-border);
     padding: 48px 0;
 }
 
@@ -522,10 +523,10 @@ body {
     background-blend-mode: multiply;
     padding-top: 30px;
     position: relative;
-    min-height: 780px;
+    min-height: 550px;
 
     &.aboutUs-wrapper {
-        min-height: 600px;
+        min-height: 500px;
 
         @media(max-width: 575px) {
             min-height: 400px;
@@ -544,7 +545,7 @@ body {
     }
 
     .navbar {
-        padding: 20px 40px;
+        padding: 10px 40px;
         border-radius: 20px;
         background-color: #FFFFFF;
         box-shadow: 0px 3px 6px #00000029;
@@ -626,7 +627,7 @@ body {
 
     .hero-content {
         position: absolute;
-        top: 50%;
+        top: calc(50% + 65px);
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -645,7 +646,7 @@ body {
         }
 
         .hero-desc {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
 
             p {
                 font-size: var(--rfs-20);
@@ -681,7 +682,7 @@ body {
     @media(min-width: 1400px) {
         &.aboutUs-wrapper {
             .hero-content {
-                transform: translate(-50%, -25%) !important;
+                transform: translate(-50%, -50%) !important;
             }
         }
     }
@@ -689,7 +690,7 @@ body {
     @media(max-width: 1399.98px) {
         &.aboutUs-wrapper {
             .hero-content {
-                transform: translate(-50%, -25%) !important;
+                transform: translate(-50%, -50%) !important;
             }
         }
     }
@@ -818,7 +819,7 @@ body {
     .custom-card {
         // background-color: var(--bg-light);
         // border-radius: 20px;
-        // border: 1px solid var(--border-color);
+        // border: 1px solid var(--light-border);
 
         .main-title {
             &.with-img {
@@ -860,14 +861,21 @@ body {
             border-radius: 20px;
             overflow: hidden;
             border: 1px solid #C0D1DD;
-
+            @media(max-width: 991px){
+                border-radius: 10px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
             .accordion-header {
                 .accordion-button {
                     font-size: var(--rfs-20);
                     color: var(--text-dark);
                     font-weight: 700;
                     padding: 28px 22px;
-
+                    @media(max-width: 991px){
+                        padding: 15px;
+                    }
                     &:not(.collapsed) {
                         color: var(--primary-color);
                         background-color: var(--bg-light);
@@ -906,7 +914,9 @@ body {
 
                 &.swiper-slide-active {
                     width: 40% !important;
-
+                    @media(max-width: 991px){
+                        width: 50%;
+                    }
                     .portfolio-card {
                         .content {
                             visibility: visible;
@@ -916,9 +926,14 @@ body {
 
                 &.swiper-slide-next {
                     width: 20% !important;
-
+                    @media(max-width: 991px){
+                        width: 25%;
+                    }
                     ~.swiper-slide {
                         width: 20% !important;
+                        @media(max-width: 991px){
+                            width: 25%;
+                        }
                     }
                 }
 
@@ -928,7 +943,9 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                     height: 500px;
-
+                    @media(max-width: 991px){
+                        border-radius: 10px;
+                    }
                     img {
                         width: 100%;
                         height: 100%;
@@ -1015,7 +1032,26 @@ body {
 // Portfolio Stylesheet End Here
 
 // Blog StyleSheet Start Here
-
+.blog-wrap {
+    h3, .h3 {
+        font-size: var(--rfs-30);
+    }
+    .img-pattern{
+        aspect-ratio: 3/2;
+        img{
+            height: 100%;
+        }
+    }
+}
+.blog-user {
+    span {
+        font-weight: 500;
+        color: var(--p);
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+}
 .blog-wrapper {
 
     .blog-bg {
@@ -1131,14 +1167,9 @@ body {
 .blog-list-wrapper {
     .blog-posts {
         .blog-post-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             overflow: hidden;
             transition: all 0.3s ease;
-            padding: 30px;
-            border: 1px solid var(--border-color);
 
             @media(max-width: 640px) {
                 background-color: transparent;
@@ -1152,8 +1183,6 @@ body {
             }
 
             &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
             }
 
             .blog-post-image {
@@ -1279,7 +1308,7 @@ body {
                 margin: 0 5px;
 
                 .page-link {
-                    border: 2px solid var(--border-color);
+                    border: 2px solid var(--light-border);
                     color: var(--text-dark);
                     font-weight: 600;
                     padding: 12px 18px;
@@ -1317,7 +1346,7 @@ body {
 
                     &:hover {
                         background: white;
-                        border-color: var(--border-color);
+                        border-color: var(--light-border);
                         color: var(--text-dark);
 
                         img {
@@ -1351,7 +1380,7 @@ body {
             .search-form {
                 .input-group {
                     .form-control {
-                        border: 2px solid var(--border-color);
+                        border: 2px solid var(--light-border);
                         border-right: none;
                         border-radius: 50px 0 0 50px;
                         padding: 12px 20px;
@@ -1557,8 +1586,8 @@ hr {
                 display: flex;
                 align-items: center;
                 gap: 20px;
-                margin-bottom: 30px;
-
+                margin-bottom: 15px;
+                margin-top: 15px;
                 .meta-item {
                     display: flex;
                     align-items: center;
@@ -1745,7 +1774,7 @@ hr {
                             border-radius: 20px;
                             font-size: var(--rfs-12);
                             font-weight: 500;
-                            border: 1px solid var(--border-color);
+                            border: 1px solid var(--light-border);
                             transition: all 0.3s ease;
 
                             &:hover {
@@ -1774,7 +1803,7 @@ hr {
                             width: 40px;
                             height: 40px;
                             background: var(--bg-light);
-                            border: 1px solid var(--border-color);
+                            border: 1px solid var(--light-border);
                             border-radius: 50%;
                             display: flex;
                             align-items: center;
@@ -1903,9 +1932,15 @@ hr {
             background-color: rgb(242, 244, 246);
             border-radius: 20px;
             aspect-ratio: 1 / 1;
-
+            @media(max-width: 991px){
+                border-radius: 10px;
+                width: 68px;
+            }
             img {
                 height: 50px;
+                @media(max-width: 991px){
+                    height: 26px;
+                }
             }
         }
     }
@@ -1925,7 +1960,7 @@ hr {
 // Services and Busniess Model Stylesheet Start Here
 
 .service-business-wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
     .custom-card {
         background-color: #F8FCFF;
@@ -2013,7 +2048,7 @@ hr {
 // Contact Us Stylesheet Start Here
 
 .contactus-wrapper {
-    margin-bottom: 60px;
+
 
     .custom-card {
         background-color: var(--primary-color);
@@ -2043,6 +2078,7 @@ hr {
         margin: 0;
         padding: 15px;
         border-radius: 10px;
+        font-size: var(--rfs-18);
 
         @media(max-width: 1299px) {
             font-size: 16px;
@@ -2070,9 +2106,12 @@ hr {
 .accordion {
     .accordion-item {
         margin-bottom: 20px;
-        border-radius: 20px;
+        border-radius: 10px;
         overflow: hidden;
         border: 1px solid #C0D1DD;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
     .accordion-body {
@@ -2149,9 +2188,9 @@ hr {
 
 .form-control,
 .form-select {
-    border-color: var(--border-color);
+    border-color: var(--light-border);
     font-size: 14px;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 10px;
 }
 
@@ -2168,11 +2207,7 @@ hr {
 
 .img-pattern-text {
     h2 {
-
-        @media(max-width: 1560px) {
-            font-size: 22px;
-            line-height: 32px;
-        }
+        font-size: var(--rfs-30);
     }
 }
 
@@ -2228,6 +2263,8 @@ hr {
         margin: 0;
         padding: 15px;
         border-radius: 10px;
+        font-size: var(--rfs-18);
+
     }
 
     img {
@@ -2259,7 +2296,7 @@ hr {
             list-style: none;
 
             a {
-                font-size: 18px;
+                font-size: var(--rfs-18);
                 text-decoration: none;
                 color: var(--text-dark);
                 padding-left: 30px;
@@ -2502,9 +2539,7 @@ p:last-child {
 
 // contact us page design start here
 .map-wrap {
-    border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 50px;
 }
 
 .drop-in-line {
@@ -2531,7 +2566,7 @@ p:last-child {
 }
 
 .icon-globally {
-    width: 80px;
+    width: 56px;
 
     img {
         width: 100%;
@@ -2539,7 +2574,7 @@ p:last-child {
 }
 
 .clients-globally {
-    width: calc(100% - 80px);
+    width: calc(100% - 56px);
     padding-left: 20px;
 }
 
@@ -2621,6 +2656,7 @@ p:last-child {
 
         h3 {
             margin-bottom: 24px;
+            font-size: var(--rfs-30);
         }
 
         ul {
@@ -2725,6 +2761,7 @@ p:last-child {
         h3 {
             margin-bottom: 24px;
             color: var(--white);
+            font-size: var(--rfs-30);
         }
 
         ul {
